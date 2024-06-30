@@ -62,17 +62,19 @@
         <div>
           <select id="product" required>
             <option hidden value="0">Por favor, seleccione.</option>
-            <option value="500">Mezcla original 200g ¥ 500</option>
-            <option value="900">Mezcla original 500g ¥ 900</option>
-            <option value="700">Mezcla especial 200g ¥ 700</option>
-            <option value="1200">Mezcla especial 500g, 1.200 yenes.</option>
+            <option value="1">Mezcla original 200g ¥ 500</option>
+            <option value="2">Mezcla original 500g ¥ 900</option>
+            <option value="3">Mezcla especial 200g ¥ 700</option>
+            <option value="4">Mezcla especial 500g ¥ 1,200</option>
           </select>
           <p>Seleccione la cantidad</p>
           <input type="number" min="1" max="5" id="number" required>
         </div>
         <br>
+        <input type="button" class="btn" value="añadir" onclick="add()">
         <input type="button" class="btn" value="importe total" onclick="calc()">
       </form>
     </section>
     <script type="text/javascript" src="javascripts/sale.js"></script>
-    
+  </body>
+</html>
